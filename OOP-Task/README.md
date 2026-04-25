@@ -1,5 +1,7 @@
 # Object Oriented Programing Task
 
+[Back](https://github.com/zlang-wq/Interview-Questions/blob/main/README.md)
+
 ## Parking Garage
 ### Task
 
@@ -8,6 +10,7 @@ You have 3 types of vehicles:
  - Car
  - Van
  - Motorcylce
+ 
 These are the requirements for the parking garage:
  - Motorcycles can only be parked in a small slot.
  - Both cars and vans can not be parked in a small slot.
@@ -32,6 +35,7 @@ For the expanded task, we can add electric vehicles like electric cars and scoot
 
 ### Design
 We have four major concepts in OOP:
+
 **Abstraction**: A design level concept that is used for hiding complexity behind a simple interface. In this example we know that the garage class will have a `Park` and a `Leave` method, but we don't know about how the parking space selection will be implemented.
 
 **Encapsulation**: An implementation level concept. It is used for bundling data and behavior together and expose only what's necessary. For example for debugging's sake, we set the access for the `ParkingSpace` to `private`, only letting it's own methods like `TryPark` and `Leave` to modify it.
@@ -42,6 +46,7 @@ We have four major concepts in OOP:
 **Polymorphism**: Same interface, different behaviour. Like you can charge a parking fee for both a car and electric car, but it is calculated in a diferent way. Like maybe the first hour for an electirc car is cheaper.
 
 For the Implementation we use the S.O.L.I.D. design principle.
+
 **S. Single responsibility**
 Each class should do a single responsibility. Vehicle doesn't park itself, space manages occupancy, garage finds spaces.
 **O. Open/Closed**
@@ -56,6 +61,7 @@ Don't force a class to implement methods it doesn't need. We can add `IParkable`
 **D. Dependency Inversion**
 High-level modules shouldn't depend on low-level modules. Both should depend on abstractions. The garage doesn't hardcore how many levels it has, it recieve the configuration through the constructor. If the layout changes, the class doesn't care.
 One of the mechanism for dependency inversion is dependency injection. There are three flavors.
+
 - **Constructor injection**: you pass it in when you create the object. Most common, most clean.
 - **Property injection**: you set it after creation. A bit messy, use it when you can't control the constructor.
 - **Method injection**: you pass it as a parameter to a specific method. Rare, but useful for optional dependencies.
