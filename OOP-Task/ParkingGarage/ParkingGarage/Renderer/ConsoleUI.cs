@@ -81,7 +81,7 @@ public static class ConsoleUI
         Console.WriteLine("V - Van");
         Console.WriteLine("M - Motorcycle");
         Console.WriteLine("█ - Space");
-        Console.WriteLine("░ - Space");
+        Console.WriteLine("░ - Small space");
     }
     
     private static void DisplayVehicle(Garage garage)
