@@ -122,17 +122,22 @@ ancestor: 4
 8: [1, 4, 8]
 ancestor: still 4, since 5 != 8
 ```
-Let's try 4,8
+Let's try 4,5,8
 ```
 8: [1, 4, 8]
     ↕ 
 4: [1, 4]
+    ↕
+5: [1, 4, 8] 
 ancestor: 1
 
 8: [1, 4, 8]
        ↕ 
 4: [1, 4]
-ancestor: 4, we won't search further since we have reached the shortest path's end
+       ↕
+5: [1, 4, 8] 
+
+ancestor: 4, we won't search further since we have reached the end of the shortest path
 
 ```
 Now let's try 8,3
@@ -146,5 +151,4 @@ ancestor: 1
        ↕
 3: [1, 3]
 ancestor: still 1 since 4 != 3
-
 ```
