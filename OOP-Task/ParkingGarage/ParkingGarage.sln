@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingGarage", "ParkingGarage\ParkingGarage.csproj", "{2E261534-7002-4313-96CF-6D005068D40B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingGarage-advanced", "ParkingGarage-advanced\ParkingGarage-advanced.csproj", "{D7FFA76A-5DB6-49F4-A60C-0640D2AA3909}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E261534-7002-4313-96CF-6D005068D40B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E261534-7002-4313-96CF-6D005068D40B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E261534-7002-4313-96CF-6D005068D40B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E261534-7002-4313-96CF-6D005068D40B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FFA76A-5DB6-49F4-A60C-0640D2AA3909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FFA76A-5DB6-49F4-A60C-0640D2AA3909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FFA76A-5DB6-49F4-A60C-0640D2AA3909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FFA76A-5DB6-49F4-A60C-0640D2AA3909}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
